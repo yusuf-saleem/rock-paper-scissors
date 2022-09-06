@@ -15,7 +15,7 @@ Pytest unit tests are included to test the functions of the game.
 The game and tests can be containerized and run with Docker. First you need to ensure Docker is installed on your system, the docker daemon is running, and you can enter docker build and docker run commands in your terminal. Run the following commands to build and run the game:
    1. docker build -t rock-paper-scissors .                            Build the docker image
    2. docker run -it --rm rock-paper-scissors                          Run the docker image which automatically starts the game
-   3. docker run -ti --rm rock-paper-scissors pytest -v /app/test.py   Run the unit tests for the game
+   3. docker run -it --rm rock-paper-scissors pytest -v /app/test.py   Run the unit tests for the game
 
 ## Running With Python
 This assumes you have Python3 installed on your system with pytest.
