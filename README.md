@@ -12,8 +12,8 @@ Pytest unit tests are included to test the functions of the game.
 - Decide game win, lose or draw, print choice of both sides
 
 ## Running With Docker
-You are required to create a Dockerfile that allows us to build a docker container and execute the tool with docker run without having any dependencies other than docker installed, the following is what a user should do to run the application or tests:
-   1. docker build -t rock-paper-scissors                              Build the docker image
+The game and tests can be containerized and run with Docker. First you need to ensure Docker is installed on your system, the docker daemon is running, and you can enter docker build and docker run commands in your terminal. Run the following commands to build and run the game:
+   1. docker build -t rock-paper-scissors .                            Build the docker image
    2. docker run -it --rm rock-paper-scissors                          Run the docker image which automatically starts the game
    3. docker run -ti --rm rock-paper-scissors pytest -v /app/test.py   Run the unit tests for the game
 
